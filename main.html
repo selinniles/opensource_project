@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="style.css">
+    <style>
+    .bg{
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    .centered{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    </style>
+  </head>
+  <body style="background-color: #6c757d">
+    <div class="row" style="background-color:white;width:100%">
+      <h4 class=""style="color:black;padding-left:80px;padding-top:10px"> <b>~ SKKU Pomodoro! ~</b></h4>
+      <div class="" style="background-color:white;padding-left:300px">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"style="background-color:black;width:100px"><i class="fa fa-plus"></i> New Task</button>
+        </div>
+      <div id="container" >
+        <p id="work" class="label" style="color:black">Work:</p><p id="break" class="label" style="color:black">Break:</p><p id="cycles" class="label" style="color:black">Cycles:</p>
+        <!--Work Timer-->
+        <div id="work-timer" class="timer">
+            <p id="w_minutes">25</p><p class="semicolon">:</p><p id="w_seconds">00</p>
+        </div>
+
+        <!--Cycle Counter-->
+        <p id="counter" class="timer">0</p>
+
+        <!--Break Timer-->
+        <div id="break-timer" class="timer">
+            <p id="b_minutes">5</p><p class="semicolon">:</p><p id="b_seconds">00</p>
+        </div>
+        <button id="start" type="button" class="btn btn-primary" data-toggle="modal" style="background-color:black;width:120px">Start/Continue</button>
+        <button id="stop" type="button" class="btn btn-primary" data-toggle="modal" style="background-color:black;width:100px">Pause</button>
+        <button id="reset" type="button" class="btn btn-primary" data-toggle="modal"style="background-color:black;width:100px">Reset</button>
+        
+    </div>
+  </body>
+</html>
