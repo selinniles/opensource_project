@@ -21,6 +21,12 @@ html {
     grid-template-rows: repeat(3, 1fr);
 }
 
+.todo-items {
+    display: flex;
+    justify-content:space-around;
+    list-style-type:none;
+}
+
 /*timers*/
 .label {
     align-self: center;
