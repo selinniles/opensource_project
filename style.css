@@ -56,6 +56,10 @@ html {
     color: black;
 }
 
+#offcanvasExample{
+    background-color: antiquewhite;
+}
+
 .music-button{
     display: flex;
     justify-content: center;
