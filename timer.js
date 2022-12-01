@@ -78,7 +78,7 @@ $(document).ready(function(){
     
             if(long_break % 4 == 0){  //if 4 continuos cycle is finished ask user to take a longer break for the next cycle
                 if(confirm("You finished 4 cycles! Do you want to take a long break next time?")){
-                    b_m.innerText = 25;
+                    b_m.innerText = 15;
                 }
                 else{
                 b_m.innerText = 5;
